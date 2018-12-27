@@ -57,6 +57,7 @@ export default {
               type: 'success',
               duration: 1000
             })
+            localStorage.setItem('token', res.data.data.token)
             // 转到首页组件
             this.$router.push('/home')
           } else {
